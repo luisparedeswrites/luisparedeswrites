@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #04AA6D;
+    font-weight: bold;
+}
+
+a:hover,
+.primary-navigation a:focus-visible {
+    color:#fff;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+p {
+    margin: 10px 0;
+  }
+
+.bookemphasis {
+    font-weight: bold;
+    font-style: italic;
+    color: orange;
+}
+
+.synopsisemphasis {
+    font-weight: bolder;
+    color: #04AA6D;
+}
+
+.wrapper {
+    max-inline-size: 1000px;
+    margin-inline: auto;
+    padding: 0 40px;
+}
+
+.two-column-layout {
+    display: grid;
+    gap: 30px;
+    @media (width > 720px) {
+    grid-template-columns: 1fr 1fr;
+}
+}
+
+.singlerowflexshowcase {
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 20px;
+}
+
+/*this is heading on homepage*/
+.authorsplash {
+    color: #04AA6D;
+    font-family: 'Boldonse', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.4rem;
+}
+
+/*this is heading on other pages*/
+.showcaseheader {
+    color: #04AA6D;
+    font-family: 'Boldonse', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    margin-block-end: 30px;
+}
+
+
+.synopsislist {
+    margin-block: 20px;
+    line-height: 1.8;
+}
+
+.testbtn {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.testbtn:hover {
+  background-color: #059862;
+}
+
+
+/*navigation*/
+
+.primary-navigation ul {
+    display: flex;
+    list-style: none;
+    color: #058457;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: .90rem;
+    @media (width > 720px) {
+    font-size: 1rem;
+}
+}
+
+.primary-navigation a {
+    color: #04AA6D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.primary-navigation a:hover,
+.primary-navigation a:focus-visible {
+    color:#fff;
+}
+
+/*footer*/
+.thefoot {
+    margin-block-start: 30px;
+    margin-block-end: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialicons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
