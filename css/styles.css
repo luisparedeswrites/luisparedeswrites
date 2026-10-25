@@ -72,6 +72,14 @@ p {
 
 }
 
+.one-column-flex {
+    display: grid;
+    gap: 20px;
+    @media (width > 720px) {
+    grid-template-columns: 1fr;
+}
+}
+
 header {
     display: flex;
     justify-content: space-between;
